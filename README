@@ -7,6 +7,14 @@ Requirements
 ------------
 In order to build st you need the Xlib header files.
 
+- otf-firamono-nerd
+- picom (st-alpha patch)
+
+Installed Patches
+-----------------
+
+- st-anysize
+- st-alpha
 
 Installation
 ------------
@@ -16,7 +24,8 @@ the /usr/local namespace by default).
 Afterwards enter the following command to build and install st (if
 necessary as root):
 
-    make clean install
+    cp -f config.def.h config.h
+    make clean && sudo make install
 
 
 Running st
